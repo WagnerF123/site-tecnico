@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO e Sistemas Embarcados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Matérias Técnicas de Desenvolvimento de Sistemas</h1>
+        <nav>
+            <ul>
+                <li><a href="#poo">POO</a></li>
+                <li><a href="#embarcados">Sistemas Embarcados</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="poo">
+        <h2>Programação Orientada a Objetos (POO)</h2>
+        <p>A Programação Orientada a Objetos é um paradigma de programação baseado no conceito de "objetos", que podem conter dados e código: dados na forma de campos (atributos) e código na forma de procedimentos (métodos).</p>
+        
+        <h3>Princípios da POO</h3>
+        <ul>
+            <li><strong>Abstração:</strong> Esconder detalhes complexos e mostrar apenas o essencial.</li>
+            <li><strong>Encapsulamento:</strong> Proteger os dados, permitindo acesso controlado.</li>
+            <li><strong>Herança:</strong> Reutilizar código entre classes.</li>
+            <li><strong>Polimorfismo:</strong> Usar a mesma interface para diferentes formas de dados.</li>
+        </ul>
+
+        <h3>Exemplo em Java</h3>
+        <pre>
+public class Pessoa {
+    private String nome;
+
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
+    public void dizerOla() {
+        System.out.println("Olá, meu nome é " + nome);
+    }
+}
+        </pre>
+    </section>
+
+    <section id="embarcados">
+        <h2>Sistemas Embarcados</h2>
+        <p>Sistemas embarcados são sistemas computacionais especializados que fazem parte de um sistema maior, com função dedicada. Eles geralmente operam com recursos limitados de hardware e software, sendo muito usados em automóveis, eletrodomésticos, equipamentos médicos, e dispositivos IoT.</p>
+
+        <h3>Características</h3>
+        <ul>
+            <li>Baixo consumo de energia</li>
+            <li>Alta confiabilidade e tempo real</li>
+            <li>Limitado em memória e processamento</li>
+            <li>Costuma utilizar microcontroladores (ex: Arduino, PIC, ESP32)</li>
+        </ul>
+
+        <h3>Exemplo em C para LED com Arduino</h3>
+        <pre>
+void setup() {
+    pinMode(13, OUTPUT); // configura o pino 13 como saída
+}
+
+void loop() {
+    digitalWrite(13, HIGH); // acende o LED
+    delay(1000);            // espera 1 segundo
+    digitalWrite(13, LOW);  // apaga o LED
+    delay(1000);            // espera 1 segundo
+}
+        </pre>
+    </section>
+
+    <footer id="contato">
+        <p>Desenvolvido por [Wagner] • 2025</p>
+        <p>Email: <a href="mailto:seuemail@exemplo.com">wagnertesouroxexa@gmail.com</a></p>
+    </footer>
+</body>
+</html>
+    
