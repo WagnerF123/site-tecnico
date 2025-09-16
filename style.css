@@ -1,0 +1,217 @@
+/* Reset básico para margens, paddings e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #d31d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Animação de Carregamento */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+/* Animação do carregamento */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 1.1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+}
+
+/* Seções principais */
+section {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2, section h3 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-bottom: 20px;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+pre {
+    background-color: #2d2d2d;
+    color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    overflow-x: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+/* Estilo para a galeria de imagens */
+.galeria {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria-imagem {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagem:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .galeria-imagem {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        padding: 8px 15px;
+    }
+
+    .spinner {
+        width: 40px;
+        height: 40px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
