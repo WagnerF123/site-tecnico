@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ADS Hub | Análise e Desenvolvimento de Sistemas</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ==============================
+         MENU
+    =============================== -->
+
+    <header class="topo">
+
+        <div class="logo">
+
+            <div class="logo-icone">
+                &lt;/&gt;
+            </div>
+
+            <div>
+
+                <h1>ADS<span>HUB</span></h1>
+
+                <p>
+                    ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#inicio">
+                Início
+            </a>
+
+            <a href="#materias">
+                Matérias
+            </a>
+
+            <a href="#jornada">
+                Jornada
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-mobile"
+            onclick="abrirMenu()"
+        >
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ==============================
+         HERO
+    =============================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="inicio"
+        >
+
+            <div class="hero-texto">
+
+                <span class="tag">
+                    💻 VIDA DE ESTUDANTE
+                </span>
+
+
+                <h2>
+                    Aprender tecnologia
+                    <strong>
+                        também é construir o futuro.
+                    </strong>
+                </h2>
+
+
+                <p>
+                    Um espaço para conhecer as principais matérias
+                    de Análise e Desenvolvimento de Sistemas,
+                    entender o que você vai aprender e acompanhar
+                    sua evolução durante essa jornada.
+                </p>
+
+
+                <div class="hero-botoes">
+
+                    <a
+                        href="#materias"
+                        class="btn-principal"
+                    >
+                        Explorar matérias →
+                    </a>
+
+                    <a
+                        href="#jornada"
+                        class="btn-secundario"
+                    >
+                        Minha jornada
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="codigo-topo">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="codigo">
+
+                    <p>
+                        <span class="roxo">const</span>
+                        estudante =
+                        <span class="azul">
+                            "futuro.dev"
+                        </span>;
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p>
+                        <span class="roxo">function</span>
+                        <span class="verde">
+                            aprender
+                        </span>() {
+                    </p>
+
+                    <p class="espaco">
+                        conhecimento++;
+                    </p>
+
+                    <p class="espaco">
+                        desafios++;
+                    </p>
+
+                    <p class="espaco">
+                        <span class="roxo">
+                            return
+                        </span>
+                        evolução;
+                    </p>
+
+                    <p>
+                        }
+                    </p>
+
+                    <p>&nbsp;</p>
+
+                    <p>
+                        <span class="cinza">
+                            // um passo de cada vez 🚀
+                        </span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             FRASE
+        =============================== -->
+
+        <section class="frase">
+
+            <div class="frase-icone">
+                💡
+            </div>
+
+            <div>
+
+                <span>
+                    MAIS DO QUE CÓDIGO
+                </span>
+
+                <h3>
+                    Tecnologia começa com curiosidade.
+                </h3>
+
+                <p>
+                    No começo, algumas matérias podem parecer difíceis.
+                    Depois, aquilo que parecia complicado começa a fazer sentido.
+                    E é justamente aí que a evolução acontece.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             MATÉRIAS
+        =============================== -->
+
+        <section
+            class="materias"
+            id="materias"
+        >
+
+            <div class="secao-topo">
+
+                <div>
+
+                    <span class="subtitulo">
+                        O QUE VOCÊ PODE ENCONTRAR
+                    </span>
+
+                    <h2>
+                        Principais matérias
+                    </h2>
+
+                    <p>
+                        Cada disciplina desenvolve uma parte
+                        importante da formação de quem trabalha
+                        com tecnologia.
+                    </p>
+
+                </div>
+
+
+                <div class="busca">
+
+                    <span>🔎</span>
+
+                    <input
+                        type="text"
+                        id="busca"
+                        placeholder="Buscar matéria..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="grid-materias"
+                id="gridMaterias"
+            >
+
+
+                <!-- PROGRAMAÇÃO -->
+
+                <article
+                    class="materia"
+                    data-nome="programação lógica algoritmos"
+                >
+
+                    <div class="materia-icone azul">
+                        &lt;/&gt;
+                    </div>
+
+                    <span class="nivel">
+                        FUNDAMENTAL
+                    </span>
+
+                    <h3>
+                        Programação e Lógica
+                    </h3>
+
+                    <p>
+                        É onde você começa a aprender a pensar
+                        como um programador: resolver problemas,
+                        criar algoritmos e transformar ideias
+                        em código.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            Algoritmos
+                        </span>
+
+                        <span>
+                            Lógica
+                        </span>
+
+                        <span>
+                            Variáveis
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+                <!-- BANCO DE DADOS -->
+
+                <article
+                    class="materia"
+                    data-nome="banco de dados sql banco dados"
+                >
+
+                    <div class="materia-icone verde">
+                        🗄️
+                    </div>
+
+                    <span class="nivel">
+                        DADOS
+                    </span>
+
+                    <h3>
+                        Banco de Dados
+                    </h3>
+
+                    <p>
+                        Você aprende como guardar, organizar
+                        e consultar informações. É a base por trás
+                        de praticamente todo sistema moderno.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            SQL
+                        </span>
+
+                        <span>
+                            Tabelas
+                        </span>
+
+                        <span>
+                            Relacionamentos
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+                <!-- ENGENHARIA -->
+
+                <article
+                    class="materia"
+                    data-nome="engenharia software requisitos"
+                >
+
+                    <div class="materia-icone laranja">
+                        ⚙️
+                    </div>
+
+                    <span class="nivel">
+                        PROJETO
+                    </span>
+
+                    <h3>
+                        Engenharia de Software
+                    </h3>
+
+                    <p>
+                        Aqui você entende que desenvolver software
+                        não é apenas programar. Planejamento,
+                        organização, testes e trabalho em equipe
+                        também fazem parte do processo.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            Requisitos
+                        </span>
+
+                        <span>
+                            Projetos
+                        </span>
+
+                        <span>
+                            Testes
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+                <!-- WEB -->
+
+                <article
+                    class="materia"
+                    data-nome="desenvolvimento web html css javascript"
+                >
+
+                    <div class="materia-icone roxo">
+                        🌐
+                    </div>
+
+                    <span class="nivel">
+                        WEB
+                    </span>
+
+                    <h3>
+                        Desenvolvimento Web
+                    </h3>
+
+                    <p>
+                        É quando suas ideias começam a ganhar
+                        forma na tela. Você aprende a criar páginas,
+                        interfaces e aplicações para a internet.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+                <!-- REDES -->
+
+                <article
+                    class="materia"
+                    data-nome="redes computadores internet"
+                >
+
+                    <div class="materia-icone azul">
+                        📡
+                    </div>
+
+                    <span class="nivel">
+                        INFRAESTRUTURA
+                    </span>
+
+                    <h3>
+                        Redes de Computadores
+                    </h3>
+
+                    <p>
+                        Como os computadores conversam entre si?
+                        Essa matéria ajuda a entender internet,
+                        comunicação entre dispositivos e redes.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            TCP/IP
+                        </span>
+
+                        <span>
+                            Internet
+                        </span>
+
+                        <span>
+                            Protocolos
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+                <!-- SISTEMAS OPERACIONAIS -->
+
+                <article
+                    class="materia"
+                    data-nome="sistemas operacionais linux windows"
+                >
+
+                    <div class="materia-icone vermelho">
+                        🖥️
+                    </div>
+
+                    <span class="nivel">
+                        SISTEMAS
+                    </span>
+
+                    <h3>
+                        Sistemas Operacionais
+                    </h3>
+
+                    <p>
+                        Você conhece o que acontece por trás
+                        das interfaces que usamos todos os dias
+                        e entende como um sistema operacional
+                        gerencia recursos do computador.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            Linux
+                        </span>
+
+                        <span>
+                            Processos
+                        </span>
+
+                        <span>
+                            Arquivos
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+                <!-- POO -->
+
+                <article
+                    class="materia"
+                    data-nome="programação orientada objetos poo"
+                >
+
+                    <div class="materia-icone rosa">
+                        🧩
+                    </div>
+
+                    <span class="nivel">
+                        PROGRAMAÇÃO
+                    </span>
+
+                    <h3>
+                        Programação Orientada a Objetos
+                    </h3>
+
+                    <p>
+                        Uma forma de organizar programas maiores,
+                        dividindo responsabilidades e deixando
+                        o código mais estruturado e reutilizável.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            Classes
+                        </span>
+
+                        <span>
+                            Objetos
+                        </span>
+
+                        <span>
+                            Herança
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+                <!-- UX -->
+
+                <article
+                    class="materia"
+                    data-nome="experiencia usuario ux ui design"
+                >
+
+                    <div class="materia-icone amarelo">
+                        🎨
+                    </div>
+
+                    <span class="nivel">
+                        DESIGN
+                    </span>
+
+                    <h3>
+                        UX e Interface
+                    </h3>
+
+                    <p>
+                        Um bom sistema precisa funcionar bem
+                        e também ser agradável de usar. Aqui entra
+                        a experiência das pessoas que vão utilizar
+                        o software.
+                    </p>
+
+                    <div class="conteudos">
+
+                        <span>
+                            UX
+                        </span>
+
+                        <span>
+                            UI
+                        </span>
+
+                        <span>
+                            Design
+                        </span>
+
+                    </div>
+
+                    <button
+                        onclick="favoritar(this)"
+                        class="favorito"
+                    >
+                        ☆ Favoritar
+                    </button>
+
+                </article>
+
+
+            </div>
+
+
+            <div
+                id="semResultado"
+                class="sem-resultado"
+            >
+
+                <div>
+                    🔍
+                </div>
+
+                <h3>
+                    Não encontramos essa matéria
+                </h3>
+
+                <p>
+                    Tente procurar por outro nome.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             JORNADA
+        =============================== -->
+
+        <section
+            class="jornada"
+            id="jornada"
+        >
+
+            <div class="jornada-texto">
+
+                <span class="subtitulo">
+                    SUA EVOLUÇÃO
+                </span>
+
+                <h2>
+                    A jornada começa
+                    <span>com um primeiro passo.</span>
+                </h2>
+
+                <p>
+                    Não precisa saber tudo de uma vez.
+                    Programação é prática, tentativa,
+                    erro e aprendizado.
+                </p>
+
+                <p>
+                    O importante é continuar estudando,
+                    fazer projetos e não ter medo de
+                    perguntar quando alguma coisa não fizer sentido.
+                </p>
+
+            </div>
+
+
+            <div class="progresso-card">
+
+                <div class="progresso-topo">
+
+                    <div>
+
+                        <span>
+                            PROGRESSO
+                        </span>
+
+                        <strong id="porcentagem">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="emoji-progresso">
+                        🚀
+                    </div>
+
+                </div>
+
+
+                <div class="barra">
+
+                    <div
+                        id="barraProgresso"
+                        class="barra-preenchida"
+                    ></div>
+
+                </div>
+
+
+                <p id="textoProgresso">
+                    Comece favoritando algumas matérias.
+                </p>
+
+
+                <div class="estatisticas">
+
+                    <div>
+
+                        <strong id="favoritos">
+                            0
+                        </strong>
+
+                        <span>
+                            Favoritas
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            8
+                        </strong>
+
+                        <span>
+                            Matérias
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            ∞
+                        </strong>
+
+                        <span>
+                            Possibilidades
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             FINAL
+        =============================== -->
+
+        <section class="final">
+
+            <div class="final-icone">
+                🚀
+            </div>
+
+            <h2>
+                Seu próximo projeto pode começar aqui.
+            </h2>
+
+            <p>
+                Estude, pratique, erre, tente novamente
+                e comemore cada pequena evolução.
+            </p>
+
+            <a
+                href="#materias"
+                class="btn-principal"
+            >
+                Voltar para as matérias
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         RODAPÉ
+    =============================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <div class="logo-icone pequeno">
+                &lt;/&gt;
+            </div>
+
+            <strong>
+                ADS<span>HUB</span>
+            </strong>
+
+        </div>
+
+
+        <p>
+            Feito para quem está aprendendo tecnologia.
+        </p>
+
+
+        <span>
+            © 2026 ADS Hub
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
